@@ -1,0 +1,346 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../img/Logo_of_Nalanda_College_Colombo.png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Login &amp; Registration | ONASA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#705d00",
+                    "on-secondary": "#ffffff",
+                    "surface-dim": "#d9dadb",
+                    "on-primary-fixed-variant": "#8f0f07",
+                    "on-primary-fixed": "#410000",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-tint": "#b22b1d",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "on-tertiary": "#ffffff",
+                    "on-background": "#191c1d",
+                    "outline-variant": "#e2bfb9",
+                    "on-surface-variant": "#5a413d",
+                    "tertiary-fixed-dim": "#aec7f6",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#ffe16d",
+                    "on-tertiary-fixed": "#001b3d",
+                    "error-container": "#ffdad6",
+                    "inverse-primary": "#ffb4a8",
+                    "on-primary-container": "#ff8371",
+                    "on-surface": "#191c1d",
+                    "surface-container-highest": "#e1e3e4",
+                    "tertiary": "#07274d",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#8fa8d6",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed-dim": "#e9c400",
+                    "surface-container": "#edeeef",
+                    "background": "#f8f9fa",
+                    "outline": "#8e706c",
+                    "on-tertiary-fixed-variant": "#2d476f",
+                    "tertiary-container": "#223d64",
+                    "error": "#ba1a1a",
+                    "surface-variant": "#e1e3e4",
+                    "primary-container": "#800000",
+                    "primary-fixed": "#ffdad4",
+                    "inverse-surface": "#2e3132",
+                    "surface-bright": "#f8f9fa",
+                    "primary": "#570000",
+                    "inverse-on-surface": "#f0f1f2",
+                    "tertiary-fixed": "#d6e3ff",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#221b00",
+                    "on-secondary-container": "#6e5c00",
+                    "on-secondary-fixed-variant": "#544600",
+                    "secondary-container": "#fcd400",
+                    "surface": "#f8f9fa"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "24px",
+                    "margin-desktop": "auto",
+                    "max-width": "1200px",
+                    "lg": "48px",
+                    "base": "8px",
+                    "md": "24px",
+                    "xs": "4px",
+                    "margin-mobile": "16px",
+                    "xl": "80px",
+                    "sm": "12px"
+            },
+            "fontFamily": {
+                    "label-md": ["Space Mono"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-input-focus:focus {
+            outline: none;
+            border-color: #570000;
+            box-shadow: 0 0 0 2px rgba(87, 0, 0, 0.1);
+        }
+        .gradient-subtle {
+            background: linear-gradient(135deg, #f8f9fa 0%, #edeeef 100%);
+        }
+        .transition-standard {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 shadow-[0px_4px_12px_rgba(100,0,0,0.08)] border-b border-secondary-container">
+<div class="flex justify-between items-center px-md py-sm w-full">
+<div class="flex items-center gap-4">
+<a href="../Home.html" class="text-sm sm:text-base font-display-lg font-bold text-primary md:text-lg leading-tight hover:opacity-85 transition-opacity no-underline">Old Nalandians Association of South Australia</a>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="../Home.html">Home</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="about_us.html">About</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="membership.html">Membership</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="events.html">Events</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="charity.html">Charity</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="gallery.html">Gallery</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="membership.html" class="hidden md:inline-block bg-primary text-on-primary px-3 py-1.5 md:px-5 md:py-2 rounded-lg font-bold hover:brightness-110 transition-all shadow-md text-center no-underline text-sm md:text-base">Join Now</a>
+<button id="menuBtn" aria-label="Toggle menu" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-primary hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<nav id="mobileMenu" class="hidden md:hidden px-md pb-sm space-y-1 bg-surface border-t border-secondary-container"></nav>
+</header>
+<!-- Main Content: Auth Section -->
+<main class="flex-grow flex items-center justify-center py-xl px-margin-mobile md:px-gutter">
+<div class="max-w-max-width w-full grid grid-cols-1 md:grid-cols-2 bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0px_12px_32px_rgba(0,33,71,0.12)] border border-surface-container-high">
+<!-- Left Column: Login -->
+<section class="p-md lg:p-xl flex flex-col justify-center border-b md:border-b-0 md:border-r border-surface-container-high">
+<div class="max-w-sm mx-auto w-full">
+
+<form action="#" class="space-y-md" method="POST" onsubmit="event.preventDefault();">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-xs" for="email">Email Address</label>
+<input class="w-full px-md py-3 bg-surface-container-low border border-surface-variant rounded-lg font-body-md text-body-md form-input-focus transition-standard" id="email" name="email" placeholder="name@example.com" required="" type="email">
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-xs" for="password">Password</label>
+<input class="w-full px-md py-3 bg-surface-container-low border border-surface-variant rounded-lg font-body-md text-body-md form-input-focus transition-standard" id="password" name="password" placeholder="••••••••" required="" type="password">
+</div>
+<div class="flex items-center justify-between">
+<a class="font-label-md text-label-md text-primary hover:text-secondary transition-colors underline underline-offset-4" href="#">Forgot Your Password?</a>
+</div>
+<button class="w-full py-4 bg-primary text-white font-label-md text-label-md rounded-lg shadow-md hover:bg-primary-container transition-standard active:scale-[0.98]" type="submit">
+                            Sign In
+                        </button>
+<div class="pt-md">
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                                By using this form you agree with the storage and handling of your data by this website.
+                            </p>
+</div>
+</form>
+</div>
+</section>
+<!-- Right Column: New Membership -->
+<section class="p-md lg:p-xl bg-surface-container-low flex flex-col justify-center">
+<div class="max-w-sm mx-auto w-full">
+
+<div class="space-y-lg">
+<!-- Eligibility Requirements -->
+<div class="space-y-sm">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+                                Eligibility Requirements
+                            </h3>
+<ul class="space-y-xs font-body-md text-body-md text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<span class="">Must Be an Old Nalandian (Studied at Nalanda College, Colombo).</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">check_circle</span>
+<span class="">Currently reside in or moving to South Australia.</span>
+</li>
+</ul>
+</div>
+<!-- Registration Process -->
+<div class="space-y-sm">
+<h3 class="font-label-md text-label-md text-primary uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+                                Registration Process
+                            </h3>
+<div class="relative space-y-md pl-4 border-l-2 border-surface-variant">
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-4 h-4 bg-secondary rounded-full border-2 border-white"></span>
+<p class="font-body-md text-body-md"><strong class="text-on-surface">Step 1:</strong> Complete online form</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-4 h-4 bg-secondary rounded-full border-2 border-white"></span>
+<p class="font-body-md text-body-md"><strong class="text-on-surface">Step 2:</strong> Provide contact details</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-4 h-4 bg-secondary rounded-full border-2 border-white"></span>
+<p class="font-body-md text-body-md"><strong class="text-on-surface">Step 3:</strong> Confirm attendance &amp; details</p>
+</div>
+<div class="relative">
+<span class="absolute -left-[25px] top-1 w-4 h-4 bg-secondary rounded-full border-2 border-white"></span>
+<p class="font-body-md text-body-md"><strong class="text-on-surface">Step 4:</strong> Provide SA residential details</p>
+</div>
+</div>
+</div>
+<button class="w-full py-4 border-2 border-primary text-primary font-label-md text-label-md rounded-lg hover:bg-primary-container hover:text-white transition-standard active:scale-[0.98] mt-lg flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">person_add</span>
+                            Create an Account
+                        </button>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Donation/CTA Section for Membership Pride -->
+<aside class="w-full bg-secondary-container py-md">
+<div class="max-w-max-width mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-md">
+<div class="flex items-center gap-md">
+<div class="p-3 bg-white/20 rounded-xl">
+<span class="material-symbols-outlined text-on-secondary-container text-[32px]">handshake</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-secondary-container">Join the Brotherhood</h4>
+<p class="font-body-md text-body-md text-on-secondary-container/80">Every registration supports our community growth in South Australia.</p>
+</div>
+</div>
+<div class="w-full md:w-64">
+<div class="flex justify-between text-on-secondary-container font-label-md text-[12px] mb-1">
+<span class="">New Members Target</span>
+<span class="">85%</span>
+</div>
+<div class="h-2 bg-white/30 rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[85%] rounded-full shadow-inner"></div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Footer -->
+<footer class="bg-primary text-white">
+<div class="w-full py-xl px-md grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-max-width mx-auto">
+<div class="space-y-6">
+<span class="text-headline-sm font-display-lg text-white">Old Nalandians Association of South Australia</span>
+<p class="text-body-md opacity-80">
+                Dedicated to preserving the heritage and strengthening the network of Nalandians in South Australia.
+            </p>
+<div class="flex gap-4">
+<a aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.012 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.012 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.012-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.584-.071 4.85c-.055 1.17-.249 1.805-.415 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.584-.015-4.85-.071c-1.17-.055-1.805-.249-2.227-.415-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.584.071-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Quick Links</h4>
+<ul class="space-y-4 font-label-md text-label-md">
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">History</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Board Members</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">FAQ</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Volunteer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Legal</h4>
+<ul class="space-y-4 font-label-md text-label-md">
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Terms of Service</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Disclaimer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Contact</h4>
+<ul class="space-y-4 font-body-md text-body-md opacity-80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-sm">mail</span>
+                    info@onasa.org.au
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-sm">location_on</span>
+                    Adelaide, South Australia
+                </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 w-full py-8 text-center px-md">
+<p class="text-label-md font-label-md opacity-60">© 2024 Old Nalandians Association of South Australia. One School, One Brotherhood, One Community.</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction for form inputs
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.add('text-primary');
+            });
+            input.addEventListener('blur', () => {
+                input.parentElement.querySelector('label').classList.remove('text-primary');
+            });
+        });
+    </script>
+
+
+<script>
+(function(){
+  var btn=document.getElementById("menuBtn");
+  var menu=document.getElementById("mobileMenu");
+  if(!btn||!menu){return;}
+  var icon=btn.querySelector(".material-symbols-outlined");
+  var desk=document.querySelector("header nav[class*='md:flex']");
+  function closeMenu(){ menu.classList.add("hidden"); if(icon){icon.textContent="menu";} }
+  if(desk){
+    menu.innerHTML=desk.innerHTML;
+    menu.querySelectorAll("a").forEach(function(a){
+      a.classList.add("block","py-2");
+      a.addEventListener("click",closeMenu);
+    });
+  }
+  // Add Join Now to the bottom of the mobile dropdown menu
+  var join=document.createElement("a");
+  join.href="membership.html";
+  join.textContent="Join Now";
+  join.className="block mt-2 bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-center no-underline";
+  join.addEventListener("click",closeMenu);
+  menu.appendChild(join);
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+    var open=menu.classList.toggle("hidden")===false;
+    if(icon){icon.textContent=open?"close":"menu";}
+  });
+})();
+</script>
+</body></html>

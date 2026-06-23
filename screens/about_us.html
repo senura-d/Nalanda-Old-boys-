@@ -1,0 +1,417 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="../img/Logo_of_Nalanda_College_Colombo.png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | ONASA - Old Nalandians Association of South Australia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(217, 217, 217, 0.8);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+        }
+        .spirit-gradient {
+            background: linear-gradient(135deg, #640000 0%, #1F1F1F 100%);
+        }
+        .material-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .legacy-bg {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCrSuD729_aOAGqzfLePWWrk3VU3P3kTuQyyzIR4NqtwyhX3oN6O5yd3OH93IoG43d1nQqJtjF2YU5tYFEeWE3kMG8Fkyxq4qqiId0-7IxxvIQ2YZSwhChw5FUPz8291Cigf6gjx7KcGjX9sR2Rby7sNEpWgRGyICAPSPwQyR-UQ5OsSS-mdQfVa29iW8uarBtdcWNbExSFRB1yh85jZzw2T7KtF0ULwhpXMwB3C44lBmk7hSP3WRt2sTe_eXaJb1Zy0QkOOhjjiEc');
+        }
+        .emblem-bg {
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrU7_qhSnNpevCYZgHSSgkh7tWaNpgT46UHQw0c2wLhoSchddLl2QZB6pC3gudo8_MOEygBT8NafhCZwYP5Fgds0-qTVhiyfvHA8vg9YsXhkSmcUMxeq1IjICg589QApxEp1PUJC-P3Ap23tzpcli7FkcFJxmkcHfZMDx-R7mEHgyJ94ug6mB3gJ37ID0dEF64GSzCx7N0tGKHTUicYm9ltxCxxTqI5Uy0Vr3vzi_pidXD8quIBs9nt4W70qprZ5uZ_X8EhWBeN-g');
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#1F1F1F",
+                        "on-primary-fixed": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#F8F8F8",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1F1F1F",
+                        "tertiary-fixed-dim": "#D9D9D9",
+                        "secondary-container": "#D9D9D9",
+                        "surface-container": "#D9D9D9",
+                        "inverse-surface": "#1F1F1F",
+                        "outline-variant": "#D9D9D9",
+                        "on-tertiary-fixed-variant": "#1F1F1F",
+                        "tertiary-container": "#1F1F1F",
+                        "outline": "#D9D9D9",
+                        "on-secondary-fixed": "#1F1F1F",
+                        "secondary-fixed": "#D9D9D9",
+                        "on-secondary-fixed-variant": "#1F1F1F",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1F1F1F",
+                        "surface-bright": "#F8F8F8",
+                        "secondary": "#D9D9D9",
+                        "tertiary": "#1F1F1F",
+                        "surface-container-highest": "#D9D9D9",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#D9D9D9",
+                        "on-secondary-container": "#1F1F1F",
+                        "surface-container-high": "#D9D9D9",
+                        "surface-tint": "#640000",
+                        "surface-container-low": "#D9D9D9",
+                        "primary-fixed": "#640000",
+                        "surface-variant": "#D9D9D9",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#D9D9D9",
+                        "tertiary-fixed": "#D9D9D9",
+                        "inverse-primary": "#ffffff",
+                        "primary": "#640000",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#1F1F1F",
+                        "primary-fixed-dim": "#640000",
+                        "primary-container": "#640000",
+                        "on-primary-fixed-variant": "#ffffff",
+                        "surface": "#ffffff",
+                        "on-surface-variant": "#1F1F1F",
+                        "on-primary-container": "#ffffff",
+                        "on-surface": "#1F1F1F",
+                        "background": "#F8F8F8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "max-width": "1200px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "margin-desktop": "auto",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter"],
+                        "label-md": ["Space Mono"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 shadow-[0px_4px_12px_rgba(100,0,0,0.08)] border-b border-secondary-container">
+<div class="flex justify-between items-center px-md py-sm w-full">
+<div class="flex items-center gap-4">
+<a href="../Home.html" class="text-sm sm:text-base font-display-lg font-bold text-primary md:text-lg leading-tight hover:opacity-85 transition-opacity no-underline">Old Nalandians Association of South Australia</a>
+</div>
+<nav class="hidden md:flex gap-8 items-center"><a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="../Home.html">Home</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="about_us.html">About</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="membership.html">Membership</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="events.html">Events</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="charity.html">Charity</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="gallery.html">Gallery</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="membership.html" class="hidden md:inline-block bg-primary text-on-primary px-3 py-1.5 md:px-5 md:py-2 rounded-lg font-bold hover:brightness-110 transition-all shadow-md text-center no-underline text-sm md:text-base">Join Now</a>
+<button id="menuBtn" aria-label="Toggle menu" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-primary hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<nav id="mobileMenu" class="hidden md:hidden px-md pb-sm space-y-1 bg-surface border-t border-secondary-container"></nav>
+</header>
+<!-- Header & Breadcrumbs -->
+<header class="bg-surface-container-low pt-lg pb-md">
+<div class="max-w-max-width mx-auto px-md">
+<nav class="flex items-center gap-xs text-on-surface-variant mb-sm font-label-md"><a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Home</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="#">About</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Membership</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Events</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Charity</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="#">Gallery</a></nav>
+<h1 class="font-display-lg text-display-lg text-primary border-l-4 border-primary pl-sm">Our Identity</h1>
+</div>
+</header>
+<main>
+<!-- History Section: "Our Legacy" -->
+<section id="history" class="py-xl bg-background">
+<div class="max-w-max-width mx-auto px-md grid grid-cols-1 md:grid-cols-2 gap-lg items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary rounded-2xl opacity-5 group-hover:opacity-10 transition-opacity"></div>
+<div class="w-full h-[400px] rounded-xl shadow-md bg-cover bg-center relative z-10 legacy-bg" data-alt="A cinematic, high-contrast photograph showing the interior of a prestigious historic building in Adelaide with wood paneling and vintage furniture. Warm sunlight streams through large windows, illuminating a scene that evokes nostalgia and scholarly excellence. The atmosphere is professional and established, utilizing a rich palette of deep maroons and golden woods, echoing a long legacy of community leadership."></div>
+</div>
+<div class="space-y-md">
+<h2 class="font-display-lg text-headline-md text-primary">Our Legacy</h2>
+<p class="font-body-lg text-body-lg leading-relaxed text-on-surface-variant">
+                        The journey of the Old Nalandians Association of South Australia began with a shared vision of brotherhood across oceans. On <strong class="text-primary">March 23, 1991</strong>, a group of dedicated alumni gathered for an inaugural meeting that would lay the foundation for a community far from home.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Founded by visionary alumni who sought to preserve the "Nalandian Spirit" in the heart of South Australia, the association has grown from a handful of members to a vibrant network of professionals, mentors, and friends. Our founding members established a core mission: to support each other and give back to our alma mater.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Mission/Vision: Two-column layout -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-max-width mx-auto px-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="bg-surface p-lg rounded-xl shadow-[0px_4px_12px_rgba(0,0,0,0.05)] border-t-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm material-fill">flag</span>
+<h3 class="font-display-lg text-headline-sm text-primary mb-sm">Our Mission</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">To foster a lifelong connection among Old Nalandians in South Australia, providing a platform for professional growth, cultural celebration, and philanthropic support for Nalanda College.</p>
+</div>
+<div class="bg-surface p-lg rounded-xl shadow-[0px_4px_12px_rgba(0,0,0,0.05)] border-t-4 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm material-fill">visibility</span>
+<h3 class="font-display-lg text-headline-sm text-primary mb-sm">Our Vision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">To be the most influential and supportive alumni community in the region, recognized for our commitment to excellence, brotherhood, and the empowerment of future generations.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Executive Committee: "The Board" -->
+<section id="board" class="py-xl bg-background">
+<div class="max-w-max-width mx-auto px-md">
+<div class="text-center mb-lg">
+<h2 class="font-display-lg text-headline-md text-primary">The Board</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto mt-sm">Leading with integrity and a commitment to our shared heritage. Meet the executive committee dedicated to serving our community.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-sm">
+<!-- Member 1 -->
+<div class="bg-surface p-sm rounded-xl shadow-sm text-center transition-transform hover:-translate-y-1">
+<img class="w-24 h-24 rounded-full mx-auto mb-sm object-cover border-2 border-primary" alt="Ajith Perera avatar" title="Ajith Perera - President" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7_4wP5QQyj6MVfyPZh15ekaslqn7p8hc7VdKYWCX0G4Oqhqh1BGi7uj76thVI4mvwqjqd2S49tJaagFH2iCxU7WubmtqQezKzLYEMpHjX6Y0wzp-CdrJEPUjmvdAft7UQwT1xzQZw2KSlPyoULjH7jMZIr2Uf9epI0StUThpz1IWafqqrYGeb0fTzVLhvVg9A5jvCiVSoxh5BOozaipBtF1P-gppgug_svxvLle0qiTphj1DnqYRIOq3pDGiFROavTV-SXqWHlDI">
+<p class="font-display-lg text-label-md text-primary truncate">Ajith Perera</p>
+<p class="font-label-md text-[12px] text-on-surface-variant">President</p>
+</div>
+<!-- Member 2 -->
+<div class="bg-surface p-sm rounded-xl shadow-sm text-center transition-transform hover:-translate-y-1">
+<img class="w-24 h-24 rounded-full mx-auto mb-sm object-cover border-2 border-primary" alt="Sunil Wickrama avatar" title="Sunil Wickrama - Secretary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsHyBvN5r0A9Y_0qOxpVlmhttVZvKJ-dQaOVUtaTVVv4YRZA2Quy4SuXCDxRzK8DMRYRxTcv00qHvJm6vWBlrQON5rwVunZl-qhLiYpDGqLjP2NTa6QnoyRRgtQIVX_G3PE070s90SKnJTNWmB12b7gIoLymvrhoBlf_MGvkDaeqBmYUIR4Agt_-WmR3XokFAQzlw85dXnViMevf6KcVhYAbIZsTTQ49hGpuhhl-EHw5g8bdTZgsVoiFxAql9o_0EJ6SZEUGQOPuU">
+<p class="font-display-lg text-label-md text-primary truncate">Sunil Wickrama</p>
+<p class="font-label-md text-[12px] text-on-surface-variant">Secretary</p>
+</div>
+<!-- Member 3 -->
+<div class="bg-surface p-sm rounded-xl shadow-sm text-center transition-transform hover:-translate-y-1">
+<img class="w-24 h-24 rounded-full mx-auto mb-sm object-cover border-2 border-primary" alt="Dilan Silva avatar" title="Dilan Silva - Treasurer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpHhdf85G7nMkZ_yJqueMCJHo502hkvvPMP5DPBZsL3E4jKAa_TpvAbGfoDJthcyKDc-2I0R-cryvYEyrDRiClSZFhXaeEaRHNUhLLsDbeIZ3gbsbb7W3pQBPd6F5YGCfgEmu3NgfoSZ5q685jKB_RLurV92tooo8_GapPqG6RNdcEH9QpEZICZTX5dDCU0g50PX2RBYx3wWg9mrwLrPqbk2svCJY9Y44ZQlAmO4n0IAj5GhkAXTToFEIkzQ9iGO7G5-UhsTQeHCk">
+<p class="font-display-lg text-label-md text-primary truncate">Dilan Silva</p>
+<p class="font-label-md text-[12px] text-on-surface-variant">Treasurer</p>
+</div>
+<!-- Member 4 -->
+<div class="bg-surface p-sm rounded-xl shadow-sm text-center transition-transform hover:-translate-y-1">
+<img class="w-24 h-24 rounded-full mx-auto mb-sm object-cover border-2 border-primary" alt="Kamal Jayasuriya avatar" title="Kamal Jayasuriya - VP Events" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZHd8LuI1suzPxR37djwpBCtXj3AoauqqdYBp899QMO51TSusi9VNWofkjbuouX21-QmUph5-0VQHJ_rCJqY-biIj6G3ATHt6fL0-7YTxuVUgDJNn39JXMcpzprq1nAVptJg950Cv6SUovH7c8F7gwgi6ASuMRplOrA82tgGoGvSQ6tT6GtRtLL2N9TlkYnmS3ZSL5s79mAPKfccgkCgPKrZ1q0FK00XQmPk_civjL6JKxipCO4HOZPnXLCInHUXgWbahjEHJ_Pw8">
+<p class="font-display-lg text-label-md text-primary truncate">Kamal Jayasuriya</p>
+<p class="font-label-md text-[12px] text-on-surface-variant">VP Events</p>
+</div>
+<!-- Member 5 -->
+<div class="bg-surface p-sm rounded-xl shadow-sm text-center transition-transform hover:-translate-y-1">
+<img class="w-24 h-24 rounded-full mx-auto mb-sm object-cover border-2 border-primary" alt="Roshan Peiris avatar" title="Roshan Peiris - VP Membership" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ5eo-v6dIRaNtInllYSdgDVWJGJ5W0ZIy3GW_I829Qrop_msmldYxJtxRn-DWK1Lx05Tvxfq1O2IPzVK7wRt4RhmoLGaj5rWRbdElAWqvWQoace0mVYytMaUB295BV-IylT9Fvbjwes2la5xc1nnjn9Zot6TSs_NkgeLfjdPR19E9TawC46pdv-oLXLkv00B_CBDFa3QqFxrMzrNiOJlgnKLphtplQoqBPuIAcu_mQp8YPmNYrfyyXmcQW4xBTDjH7sFP5dLdzl0">
+<p class="font-display-lg text-label-md text-primary truncate">Roshan Peiris</p>
+<p class="font-label-md text-[12px] text-on-surface-variant">VP Membership</p>
+</div>
+<!-- Member 6 -->
+<div class="bg-surface p-sm rounded-xl shadow-sm text-center transition-transform hover:-translate-y-1">
+<img class="w-24 h-24 rounded-full mx-auto mb-sm object-cover border-2 border-primary" alt="Thilina Dias avatar" title="Thilina Dias - General Officer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxQ76iJHpZKCJwy8f53t2QtjWP-U_S-iuCF1WqvJW9_E9INJQZO6SZyM_bl6uCG6ZLug-_IBVWimQDurY2BOnabl9NNF9BJXhCmJln3jsRx6no4ZagSfcWgBsJj8fTMourYvL4M_MXzLc8VeyZsZqQxOc57efv4IdLTpM0R0LUjd39H0BNsMo8AS5zJNpi-Euu7JJwlysraLKBPjc-y6cUWDSHnS14endXghSgy9SIrvXcs7CjLHRWeamAnB-nALDtGIWC8floAA8">
+<p class="font-display-lg text-label-md text-primary truncate">Thilina Dias</p>
+<p class="font-label-md text-[12px] text-on-surface-variant">General Officer</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Nalandian Spirit: Section -->
+<section class="py-xl spirit-gradient relative overflow-hidden text-white">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+<defs>
+<pattern height="10" id="grid" patternUnits="userSpaceOnUse" width="10">
+<path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100" width="100"></rect>
+</svg>
+</div>
+<div class="max-w-max-width mx-auto px-md relative z-10 grid grid-cols-1 md:grid-cols-5 gap-lg items-center">
+<div class="md:col-span-3">
+<h2 class="font-display-lg text-display-lg text-white mb-md">What it means to be a Nalandian</h2>
+<p class="font-body-lg text-body-lg mb-md leading-relaxed opacity-90">
+                        Nalanda College Colombo is more than just a school; it is an institution that forged our character and defined our values. Being a Nalandian means carrying the weight of a rich heritage—a tradition of academic brilliance, sporting prowess, and unyielding patriotism.
+                    </p>
+<p class="font-body-md text-body-md opacity-80 italic">
+                        "One School, One Brotherhood, One Community." This ethos drives everything we do at ONASA, ensuring that the fire ignited at Nalanda continues to burn bright in South Australia.
+                    </p>
+</div>
+<div class="md:col-span-2 flex justify-center">
+<div class="relative w-full max-w-[320px] aspect-square rounded-full border-4 border-white/30 flex items-center justify-center p-8">
+<div class="absolute inset-0 border-2 border-dashed border-white/20 rounded-full animate-[spin_20s_linear_infinite]"></div>
+<div class="w-full h-full rounded-full bg-cover bg-center shadow-2xl emblem-bg" data-alt="A highly detailed and prestigious emblem or crest of a heritage educational institution."></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Regional Branches -->
+<section class="py-xl bg-background">
+<div class="max-w-max-width mx-auto px-md">
+<div class="flex flex-col md:flex-row items-center gap-lg">
+<div class="w-full md:w-1/2">
+<h2 class="font-display-lg text-headline-md text-primary mb-sm">A Network Beyond Adelaide</h2>
+<p class="font-body-md text-on-surface-variant mb-md">We are proud to maintain close ties with our fellow Nalandians across Australia. Our brotherhood extends beyond state borders, with active collaboration between major regional branches.</p>
+<div class="space-y-sm">
+<div class="flex items-center gap-md p-md bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h4 class="font-display-lg text-label-md">Melbourne Branch</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Victorian Old Nalandians Association</p>
+</div>
+</div>
+<div class="flex items-center gap-md p-md bg-surface-container rounded-xl">
+<span class="material-symbols-outlined text-primary material-fill">stars</span>
+<div>
+<h4 class="font-display-lg text-label-md">Adelaide Chapter (ONASA)</h4>
+<p class="font-body-md text-sm text-on-surface-variant">Old Nalandians Association of South Australia</p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 h-[350px] rounded-2xl overflow-hidden shadow-lg border border-outline-variant">
+<div class="w-full h-full bg-surface relative flex items-center justify-center overflow-hidden" data-location="Australia">
+<svg class="w-full h-full text-primary opacity-5" viewBox="0 0 800 600">
+<path d="M200,450 Q300,500 450,450 T700,300 Q750,150 600,100 T300,150 Q100,250 200,450" fill="currentColor"></path>
+</svg>
+<div class="absolute top-[65%] left-[55%] group cursor-pointer">
+<div class="w-4 h-4 bg-primary rounded-full animate-ping absolute"></div>
+<div class="w-4 h-4 bg-primary rounded-full relative shadow-md"></div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-primary text-on-primary px-3 py-1 rounded-md text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Adelaide</div>
+</div>
+<div class="absolute top-[60%] left-[65%] group cursor-pointer">
+<div class="w-3 h-3 bg-tertiary rounded-full relative shadow-sm"></div>
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-tertiary text-on-tertiary px-3 py-1 rounded-md text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">Melbourne</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white">
+<div class="w-full py-xl px-md grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-max-width mx-auto">
+<div class="space-y-6">
+<span class="text-headline-sm font-display-lg text-white">Old Nalandians Association of South Australia</span>
+<p class="text-body-md opacity-80">
+                Dedicated to preserving the heritage and strengthening the network of Nalandians in South Australia.
+            </p>
+<div class="flex gap-4"><a aria-label="Facebook" title="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a aria-label="Instagram" title="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.012 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.012 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.012-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.584-.071 4.85c-.055 1.17-.249 1.805-.415 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.584-.015-4.85-.071c-1.17-.055-1.805-.249-2.227-.415-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.584.071-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+</a>
+
+</div>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Quick Links</h4>
+<ul class="space-y-4 font-label-md text-label-md">
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="about_us.html#history">History</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="about_us.html#board">Board Members</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="membership.html#faq">FAQ</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="charity.html#volunteer">Volunteer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Legal</h4>
+<ul class="space-y-4 font-label-md text-label-md">
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="privacy_policy.html">Privacy Policy</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="terms_conditions.html">Terms of Service</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Disclaimer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Contact</h4>
+<ul class="space-y-4 font-body-md text-body-md opacity-80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-sm">mail</span>
+                    info@onasa.org.au
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-sm">location_on</span>
+                    Adelaide, South Australia
+                </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 w-full py-8 text-center px-md">
+<p class="text-label-md font-label-md opacity-60">© 2024 Old Nalandians Association of South Australia. One School, One Brotherhood, One Community.</p>
+</div>
+</footer>
+<script>
+        document.querySelectorAll('.bg-surface').forEach(card => {
+            const img = card.querySelector('.w-24');
+            if(img) {
+                card.addEventListener('mouseenter', () => {
+                    img.style.transform = 'scale(1.1)';
+                    img.style.transition = 'transform 0.3s ease';
+                });
+                card.addEventListener('mouseleave', () => {
+                    img.style.transform = 'scale(1)';
+                });
+            }
+        });
+    </script>
+
+
+
+
+
+
+<script>
+(function(){
+  var btn=document.getElementById("menuBtn");
+  var menu=document.getElementById("mobileMenu");
+  if(!btn||!menu){return;}
+  var icon=btn.querySelector(".material-symbols-outlined");
+  var desk=document.querySelector("header nav[class*='md:flex']");
+  function closeMenu(){ menu.classList.add("hidden"); if(icon){icon.textContent="menu";} }
+  if(desk){
+    menu.innerHTML=desk.innerHTML;
+    menu.querySelectorAll("a").forEach(function(a){
+      a.classList.add("block","py-2");
+      a.addEventListener("click",closeMenu);
+    });
+  }
+  // Add Join Now to the bottom of the mobile dropdown menu
+  var join=document.createElement("a");
+  join.href="membership.html";
+  join.textContent="Join Now";
+  join.className="block mt-2 bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-center no-underline";
+  join.addEventListener("click",closeMenu);
+  menu.appendChild(join);
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+    var open=menu.classList.toggle("hidden")===false;
+    if(icon){icon.textContent=open?"close":"menu";}
+  });
+})();
+</script>
+</body></html>

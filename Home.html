@@ -1,0 +1,436 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Inter:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/Logo_of_Nalanda_College_Colombo.png">
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ONASA - Old Nalandians Association of South Australia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .glass-card {
+            background: rgba(217, 217, 217, 0.9);
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(100, 0, 0, 0.45), rgba(100, 0, 0, 0.15)), linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
+        }
+        .hero-bg {
+            background-image: url('img/Nalanda-Junior-Old-Boys-Associations.jpg');
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#D9D9D9",
+                        "on-primary-fixed": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-error-container": "#93000a",
+                        "on-background": "#1F1F1F",
+                        "tertiary-fixed-dim": "#D9D9D9",
+                        "secondary-container": "#D9D9D9",
+                        "surface-container": "#D9D9D9",
+                        "inverse-surface": "#1F1F1F",
+                        "outline-variant": "#D9D9D9",
+                        "on-tertiary-fixed-variant": "#D9D9D9",
+                        "tertiary-container": "#1F1F1F",
+                        "outline": "#D9D9D9",
+                        "on-secondary-fixed": "#1F1F1F",
+                        "secondary-fixed": "#D9D9D9",
+                        "on-secondary-fixed-variant": "#1F1F1F",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#1F1F1F",
+                        "surface-bright": "#f8f9fa",
+                        "secondary": "#D9D9D9",
+                        "tertiary": "#640000",
+                        "surface-container-highest": "#D9D9D9",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#D9D9D9",
+                        "on-secondary-container": "#1F1F1F",
+                        "surface-container-high": "#D9D9D9",
+                        "surface-tint": "#640000",
+                        "surface-container-low": "#D9D9D9",
+                        "primary-fixed": "#D9D9D9",
+                        "surface-variant": "#D9D9D9",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#D9D9D9",
+                        "tertiary-fixed": "#D9D9D9",
+                        "inverse-primary": "#ffffff",
+                        "primary": "#640000",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#1F1F1F",
+                        "primary-fixed-dim": "#D9D9D9",
+                        "primary-container": "#640000",
+                        "on-primary-fixed-variant": "#ffffff",
+                        "surface": "#F8F8F8",
+                        "on-surface-variant": "#1F1F1F",
+                        "on-primary-container": "#ffffff",
+                        "on-surface": "#1F1F1F",
+                        "background": "#F8F8F8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "max-width": "1200px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "margin-mobile": "16px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "gutter": "24px",
+                        "margin-desktop": "auto",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter"],
+                        "label-md": ["Space Mono"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Inter"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 shadow-[0px_4px_12px_rgba(100,0,0,0.08)] border-b border-secondary-container">
+<div class="flex justify-between items-center px-md py-sm w-full">
+<div class="flex items-center gap-4">
+<a href="Home.html" class="text-sm sm:text-base font-display-lg font-bold text-primary md:text-lg leading-tight hover:opacity-85 transition-opacity no-underline">Old Nalandians Association of South Australia</a>
+</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="Home.html">Home</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="screens/about_us.html">About</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="screens/membership.html">Membership</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="screens/events.html">Events</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="screens/charity.html">Charity</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="screens/gallery.html">Gallery</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="screens/membership.html" class="hidden md:inline-block bg-primary text-on-primary px-3 py-1.5 md:px-5 md:py-2 rounded-lg font-bold hover:brightness-110 transition-all shadow-md text-center no-underline text-sm md:text-base">Join Now</a>
+
+<button id="menuBtn" aria-label="Toggle menu" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-primary hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<nav id="mobileMenu" class="hidden md:hidden px-md pb-sm space-y-1 bg-surface border-t border-secondary-container"></nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden transition-all duration-700 opacity-100 translate-y-0">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full hero-gradient absolute inset-0 z-10"></div>
+<div class="w-full h-full bg-cover bg-center hero-bg" data-alt="Nalanda Junior Old Boys Association backdrop image"></div>
+</div>
+<div class="relative z-20 max-w-max-width mx-auto px-md w-full">
+<div class="max-w-2xl text-white">
+<h1 class="font-display-lg text-display-lg mb-6 leading-tight">One School.<br>One Brotherhood.<br>One Community.</h1>
+<p class="font-body-lg text-body-lg opacity-90 mb-8 border-l-4 border-white pl-6">
+                    Fostering fellowship among old Nalandians in South Australia while supporting our alma mater and the community.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a href="screens/membership.html" class="bg-white text-primary font-bold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform font-label-md text-label-md uppercase tracking-wider text-center inline-block no-underline">Join Now</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Stats Bento -->
+<section class="max-w-max-width mx-auto px-md -mt-16 relative z-30 transition-all duration-700 opacity-100 translate-y-0">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="glass-card p-8 rounded-2xl shadow-xl flex items-center gap-6 group hover:-translate-y-2 transition-all duration-300">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">groups</span>
+</div>
+<div>
+<div class="text-headline-md font-display-lg text-primary">2,600+</div>
+<div class="font-label-md text-on-surface">Nalandians in Australia</div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-2xl shadow-xl flex items-center gap-6 group hover:-translate-y-2 transition-all duration-300">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">account_tree</span>
+</div>
+<div>
+<div class="text-headline-md font-display-lg text-primary">3</div>
+<div class="font-label-md text-on-surface">Regional Branches</div>
+</div>
+</div>
+<div class="glass-card p-8 rounded-2xl shadow-xl flex items-center gap-6 group hover:-translate-y-2 transition-all duration-300">
+<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<div>
+<div class="text-headline-md font-display-lg text-primary">50+ Years</div>
+<div class="font-label-md text-on-surface">of Fellowship</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who We Are -->
+<section class="py-xl max-w-max-width mx-auto px-md grid grid-cols-1 lg:grid-cols-2 gap-xl items-center transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">
+<div class="relative">
+<div class="w-full aspect-square rounded-3xl overflow-hidden shadow-xl border-8 border-white">
+<img class="w-full h-full object-cover" alt="A high-quality group portrait of professional men in their 40s and 50s, representing a successful alumni brotherhood. They are standing together in a warm, brightly lit modern community hall in Adelaide, smiling warmly toward the camera. The image uses a soft, corporate color palette with deep maroons and golds in the background decor, emphasizing reliability and prestige." title="ONASA Alumni Group Portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm9xADZPhYfgsnL0Tvdh_PrsBCUeof9lU04rElqDkk6Z2bSeuC4rxrmAMyAN-_lBkKuA6_9BcQ1hEVJsXd7aF7h2S8k39JjSVkW1xem6phcSS45w9mt9cLf8g6AhPUr_UQRc748ng1h8uPhpsZ0ZWZtJK7vLid2hnvhXLr_hzlXQgs1QIidr0nVzU-m1plqaujwL8FYX4bSLNDngycyJieXhNNFTj45zmAhdkM0kF-GwQAdmyWeKeTbAd0vktxJcAdYSe-XB3iOCk">
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 rounded-full -z-10"></div>
+<div class="absolute -top-8 -left-8 w-32 h-32 bg-primary/5 rounded-lg -z-10"></div>
+</div>
+<div>
+<span class="text-primary font-bold tracking-widest font-label-md text-label-md uppercase block mb-4">About Us</span>
+<h2 class="text-display-lg font-display-lg text-primary mb-6">Who We Are</h2>
+<div class="space-y-6">
+<p class="text-body-lg font-body-lg text-on-surface">
+                    The Old Nalandians Association of South Australia (ONASA) is more than just an alumni group; it is a lifelong brotherhood rooted in the values of our prestigious alma mater.
+                </p>
+<p class="text-body-md font-body-md text-on-surface leading-relaxed opacity-80">
+                    Our mission is to sustain and strengthen the bonds between former students residing in South Australia, providing a platform for professional networking, social fellowship, and charitable initiatives that support both our school back home and our local community here in Adelaide.
+                </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                        Professional Mentorship Programs
+                    </li>
+<li class="flex items-center gap-3 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                        Community Service Projects
+                    </li>
+<li class="flex items-center gap-3 text-on-surface font-semibold">
+<span class="material-symbols-outlined text-primary font-bold">check_circle</span>
+                        Annual Heritage Celebrations
+                    </li>
+</ul>
+<button class="mt-4 px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-300">Learn More Our History</button>
+</div>
+</div>
+</section>
+<!-- Latest News & Events -->
+<section class="bg-surface-container py-xl transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">
+<div class="max-w-max-width mx-auto px-md">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-primary font-bold tracking-widest font-label-md text-label-md uppercase block mb-2">Updates</span>
+<h2 class="text-headline-md font-display-lg text-primary">Latest News &amp; Events</h2>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                    View All Events <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer hover:shadow-xl transition-shadow border border-secondary-container">
+<div class="h-56 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="A festive outdoor gala setup on a manicured lawn in South Australia, featuring elegant round tables with gold and maroon centerpieces. The lighting is warm and golden as the sun sets. Professional alumni are mingling in the background. High contrast, sharp focus, professional photography style." title="Annual Gala Night 2024" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAes_EiEVMGSfp3SjpiyPuf5H0E1YpOMOyDpOy7TMgRnNCrjgjlcCzu7BujHKwuMcfovyGkNp2K4RnqB6uEjqhc87fG0mVSMMv1Ile11CDmsrolI-jPxoNDUKano86T0zs4Q5fBojXRH_zIL7ASZONYTC0lERjpZ2Gqj2PhCvgDUqLecH_LE-B2jcRq5Ih03M3xYiYb6aVAOpakmcuZvwVrnneH9rx-qhmImvUBRaek3-GyeA5Ah0DG9zfOjW6vAt-6nlp47wD3h40">
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 rounded text-on-primary font-bold font-label-md text-label-md">24 AUG</div>
+</div>
+<div class="p-6">
+<h3 class="font-display-lg text-headline-sm mb-3 text-primary group-hover:opacity-80 transition-opacity">Annual Gala Night 2024</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                            Join us for an evening of elegance and brotherhood at the Adelaide Convention Centre as we celebrate our association's achievements.
+                        </p>
+<div class="flex items-center text-label-md font-label-md text-primary gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Adelaide CBD
+                        </div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer hover:shadow-xl transition-shadow border border-secondary-container">
+<div class="h-56 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="A group of diverse alumni volunteers handing out supplies and food to a local community in a bright, modern park setting. The volunteers are wearing association shirts with the ONASA logo. The scene is heartwarming, sun-drenched, and professional, emphasizing community service and unity." title="Charity Food Drive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVWquzQYXXC7AZeDheYKDp2YSJewSb2ukBzj2D--wAzDDNn9HpDwrwGzF_H6QFkV7UBSy7eixzmxxKK5-EO_I8OuMeXtExs-0bWOS8vHW_EtHhOQjK1_2freGnNtYWfPqKh9wgvX-eVN87Wg1Toqs46ZjiaOa0S5kZBoOq7KoAC0XIfs5OClTi1HvoPwpnKtFXcH2-RGy5hzuzROQUEjpf1y1KHFUnu_lnYclTJlhcQLaRH0XVYQe7ikLBs1ZvVLBQ0gCIEvfOYY8">
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 rounded text-on-primary font-bold font-label-md text-label-md">12 SEP</div>
+</div>
+<div class="p-6">
+<h3 class="font-display-lg text-headline-sm mb-3 text-primary group-hover:opacity-80 transition-opacity">Charity Food Drive</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                            Supporting local South Australian families in need. Your contribution, no matter how small, makes a significant difference.
+                        </p>
+<div class="flex items-center text-label-md font-label-md text-primary gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Victoria Square
+                        </div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-md group cursor-pointer hover:shadow-xl transition-shadow border border-secondary-container">
+<div class="h-56 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="A dynamic action shot from a friendly cricket match between alumni. Players are in white kits on a lush green cricket ground in Adelaide. The mood is energetic and celebratory under a clear blue sky. Professional sports photography style, high-end feel." title="Brotherhood Cricket Cup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtytzvCC4hEPzmp_ue52lO4VX5NGKg8dPnfupycpXgE24eeH5rqk8_PSXSeuoqqhyh4xm4IdwnGrB-LcUcxCr5cAfV0_uNZK7vEs8oTcNrUr4G4eMc2mEq49eGJbD6XVgf3Lt5EaGikyxB1xaluJt6u5opIDJK8uAQ0UCqlg_KXvway73mBW4-Ot55RtEF490WHsGF8YP15sRU_EvVRLe_gbjJnBrhxSvUOKTYo8KG-gZyZfKyvWMLHkzlSfaec8y3lO_4QGo6SKk">
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 rounded text-on-primary font-bold font-label-md text-label-md">05 OCT</div>
+</div>
+<div class="p-6">
+<h3 class="font-display-lg text-headline-sm mb-3 text-primary group-hover:opacity-80 transition-opacity">Brotherhood Cricket Cup</h3>
+<p class="text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                            Dust off your gear for our annual friendly tournament. A day of sportsmanship, barbecue, and family fun.
+                        </p>
+<div class="flex items-center text-label-md font-label-md text-primary gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                            Adelaide Oval Grounds
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl transition-all duration-700 opacity-100 translate-y-0 opacity-0 translate-y-10">
+<div class="max-w-max-width mx-auto px-md">
+<div class="bg-primary rounded-[2.5rem] overflow-hidden relative flex flex-col md:flex-row items-center shadow-2xl">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-white opacity-5 skew-x-12 translate-x-16"></div>
+<div class="p-12 md:p-20 relative z-10 w-full md:w-2/3">
+<h2 class="text-display-lg-mobile md:text-display-lg font-display-lg text-white mb-6">Become a Member Today</h2>
+<p class="text-body-lg font-body-lg text-white opacity-90 mb-10 max-w-xl">
+                        Reconnect with old friends, expand your professional network, and give back to the institution that shaped you.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-white text-primary font-bold px-10 py-4 rounded-xl text-center shadow-lg hover:brightness-110 transition-all font-label-md text-label-md uppercase tracking-wider" href="#">Join The Brotherhood</a>
+<a class="border-2 border-white/40 text-white font-bold px-10 py-4 rounded-xl text-center hover:bg-white/10 transition-all font-label-md text-label-md uppercase tracking-wider" href="#">Contact Secretary</a>
+</div>
+</div>
+<div class="w-full md:w-1/3 h-80 md:h-full relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-40 mix-blend-overlay" alt="A close-up shot of a sophisticated gold membership card with the ONASA logo, resting on a dark walnut wooden desk next to an elegant fountain pen. The lighting is focused and warm, highlighting the texture and prestige of the association. The color scheme is deep navy and gold, creating an aura of exclusivity and elite membership." title="ONASA Gold Membership Card" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvW-CMxDk_HPP2GJR7j_wIYedOCWJtcnEiOi78VdMnh0c6sURTjB6pXvfx4z_BrGxpAhsI6EUwbXNoQs3ga8QKhNojDOpnZ8Rqa5dHTaLt4JzcLzmJLyXlkElh8w8UVT3UqIYgP5gfKr2QiW9WEf1paWEPkn7Br4op5o0G5wW1M4BoqC9rDjRzHaSoEItduo6vt7q_MxPlJ1v1xC-v9o6UxGoZroEObbRx97vhVwi4u7fD4vIm_NFrkTMUoXMgWBzGBQdNoGozlXc">
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white">
+<div class="w-full py-xl px-md grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-max-width mx-auto">
+<div class="space-y-6">
+<span class="text-headline-sm font-display-lg text-white">Old Nalandians Association of South Australia</span>
+<p class="text-body-md opacity-80">
+                Dedicated to preserving the heritage and strengthening the network of Nalandians in South Australia.
+            </p>
+<div class="flex gap-4">
+<a aria-label="Facebook" title="Facebook" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+<a aria-label="Instagram" title="Instagram" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white hover:text-primary transition-all" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.012 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.012 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.012-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.584-.071 4.85c-.055 1.17-.249 1.805-.415 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.584-.015-4.85-.071c-1.17-.055-1.805-.249-2.227-.415-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.584.071-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+</a>
+
+</div>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Quick Links</h4>
+<ul class="space-y-4 font-label-md text-label-md">
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="screens/about_us.html#history">History</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="screens/about_us.html#board">Board Members</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="screens/membership.html#faq">FAQ</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="screens/charity.html#volunteer">Volunteer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Legal</h4>
+<ul class="space-y-4 font-label-md text-label-md">
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="screens/privacy_policy.html">Privacy Policy</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="screens/terms_conditions.html">Terms of Service</a></li>
+<li class=""><a class="text-white opacity-80 hover:opacity-100 transition-all" href="#">Disclaimer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display-lg text-label-md mb-6 uppercase tracking-wider text-white border-b border-white/20 pb-2">Contact</h4>
+<ul class="space-y-4 font-body-md text-body-md opacity-80">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-sm">mail</span>
+                    info@onasa.org.au
+                </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-white text-sm">location_on</span>
+                    Adelaide, South Australia
+                </li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 w-full py-8 text-center px-md">
+<p class="text-label-md font-label-md opacity-60">© 2024 Old Nalandians Association of South Australia. One School, One Brotherhood, One Community.</p>
+</div>
+</footer>
+<!-- FAB -->
+<div class="fixed bottom-8 right-8 z-50">
+<button class="w-14 h-14 bg-primary text-white rounded-full shadow-2xl flex items-center justify-center group hover:scale-110 transition-transform border border-white/20">
+<span class="material-symbols-outlined text-3xl font-bold">handshake</span>
+<span class="absolute right-full mr-4 bg-white text-primary px-4 py-2 rounded-lg text-sm font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">Join the Association</span>
+</button>
+</div>
+<script>
+    // Simple intersection observer for reveal animations
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(section);
+    });
+</script>
+
+
+
+
+<script>
+(function(){
+  var btn=document.getElementById("menuBtn");
+  var menu=document.getElementById("mobileMenu");
+  if(!btn||!menu){return;}
+  var icon=btn.querySelector(".material-symbols-outlined");
+  var desk=document.querySelector("header nav[class*='md:flex']");
+  function closeMenu(){ menu.classList.add("hidden"); if(icon){icon.textContent="menu";} }
+  if(desk){
+    menu.innerHTML=desk.innerHTML;
+    menu.querySelectorAll("a").forEach(function(a){
+      a.classList.add("block","py-2");
+      a.addEventListener("click",closeMenu);
+    });
+  }
+  // Add Join Now to the bottom of the mobile dropdown menu
+  var join=document.createElement("a");
+  join.href="screens/membership.html";
+  join.textContent="Join Now";
+  join.className="block mt-2 bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-center no-underline";
+  join.addEventListener("click",closeMenu);
+  menu.appendChild(join);
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+    var open=menu.classList.toggle("hidden")===false;
+    if(icon){icon.textContent=open?"close":"menu";}
+  });
+})();
+</script>
+</body></html>
