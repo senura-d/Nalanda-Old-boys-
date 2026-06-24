@@ -1,0 +1,341 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Articles | Old Nalandians Association of South Australia</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#640000",
+                        "primary-container": "#800000",
+                        "on-primary": "#ffffff",
+                        "secondary": "#705d00",
+                        "secondary-container": "#fcd400",
+                        "surface": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "surface-container": "#edeeef",
+                        "surface-container-low": "#f3f4f5",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-surface": "#191c1d",
+                        "on-surface-variant": "#5a413d",
+                        "background": "#f8f9fa",
+                        "outline": "#8e706c",
+                        "outline-variant": "#e2bfb9",
+                        "tertiary": "#07274d",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "8px",
+                        "lg": "12px",
+                        "xl": "16px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "xl": "80px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "auto",
+                        "base": "8px",
+                        "lg": "48px",
+                        "max-width": "1200px",
+                        "xs": "4px",
+                        "sm": "12px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Montserrat", "sans-serif"],
+                        "headline-md": ["Montserrat", "sans-serif"],
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "headline-sm": ["Montserrat", "sans-serif"],
+                        "display-lg": ["Montserrat", "sans-serif"],
+                        "label-md": ["Montserrat", "sans-serif"],
+                        "body-lg": ["Montserrat", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #191c1d;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 shadow-[0px_4px_12px_rgba(100,0,0,0.08)] border-b border-secondary-container">
+<div class="flex justify-between items-center px-md py-sm w-full">
+<div class="flex items-center gap-4">
+<a href="../home.html" class="text-sm sm:text-base font-display-lg font-bold text-primary md:text-lg leading-tight hover:opacity-85 transition-opacity no-underline">Old Nalandians Association of South Australia</a>
+</div>
+<nav class="hidden md:flex gap-8 items-center"><a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="../home.html">Home</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="about_us.html">About</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="membership.html">Membership</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="events.html">Events</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="charity.html">Charity</a>
+<a class="text-on-surface font-medium font-label-md text-label-md hover:text-primary transition-colors duration-200" href="gallery.html">Gallery</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-bold font-label-md text-label-md" href="articles.html">Articles</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="membership.html" class="hidden md:inline-block bg-primary text-on-primary px-3 py-1.5 md:px-5 md:py-2 rounded-lg font-bold hover:brightness-110 transition-all shadow-md text-center no-underline text-sm md:text-base">Join Now</a>
+<button id="menuBtn" aria-label="Toggle menu" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg text-primary hover:bg-secondary-container transition-colors"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+<nav id="mobileMenu" class="hidden md:hidden px-md pb-sm space-y-1 bg-surface border-t border-secondary-container"></nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="bg-surface py-xl px-md">
+<div class="max-w-max-width mx-auto text-center">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Insights &amp; Updates</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Discover the latest stories, achievements, and news from our South Australian community.
+            </p>
+</div>
+</section>
+<!-- Featured Article Section -->
+<section class="px-md pb-xl">
+<div class="max-w-max-width mx-auto">
+<div class="relative bg-white rounded-lg overflow-hidden border border-surface-variant flex flex-col md:flex-row items-stretch">
+<div class="w-full md:w-3/5 min-h-[400px] relative">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A professional and warm photograph of a diverse group of alumni gathered at a formal evening event in South Australia." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlzOB2Rv_0xQC1n6ZoIMtHI6v7Cyi2QgLfitNzGdCwtN7AeHMaMK2IS88ZVT1qt6vnKnupuA3AZB6hl5b0xdoj5hYazdiNBZ2pFbWLNDtL9Adek8VZjDNUf-o70wFYaCzpGvai8R9am9nLyCcheX0IIn55eoyGzhVXn8abPE-UsxcLexAUCOD5X_u7D7d7D8NJ2VYoL_hLq1pjeC306FYSrR2ajkkRC2Pe6ToYs6nzR67CDV_Pneojf_2H9RSidCOYcl8moNKaY1U">
+</div>
+<div class="w-full md:w-2/5 p-md md:p-lg flex flex-col justify-center">
+<span class="font-bold text-[12px] text-primary tracking-widest uppercase mb-4 block">Featured Insight</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 leading-tight">Celebrating 50 Years of Excellence in the Diaspora</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">
+                        Join us as we reflect on the journey of the Old Nalandians Association in South Australia, honoring the founders and looking ahead to the future of our brotherhood.
+                    </p>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-lg font-bold w-fit hover:bg-primary-container transition-all">Read More</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Search & Categories -->
+<section class="bg-surface-container-low py-lg px-md sticky top-[72px] z-40 border-y border-surface-variant">
+<div class="max-w-max-width mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="relative w-full md:w-1/3">
+<input class="w-full bg-white border border-outline-variant rounded-lg px-6 py-3 pl-12 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-label-md text-label-md" placeholder="Search articles..." type="text">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant" data-icon="search">search</span>
+</div>
+<div class="flex flex-wrap justify-center gap-3">
+<button class="px-5 py-2 bg-primary text-on-primary rounded-lg font-bold text-label-md hover:bg-primary-container transition-all">All Stories</button>
+<button class="px-5 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-lg font-bold text-label-md hover:bg-surface-container transition-all">Community News</button>
+<button class="px-5 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-lg font-bold text-label-md hover:bg-surface-container transition-all">Alumni Spotlights</button>
+<button class="px-5 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-lg font-bold text-label-md hover:bg-surface-container transition-all">Heritage</button>
+<button class="px-5 py-2 bg-white border border-outline-variant text-on-surface-variant rounded-lg font-bold text-label-md hover:bg-surface-container transition-all">Association Updates</button>
+</div>
+</div>
+</section>
+<!-- Articles Grid -->
+<section class="py-xl px-md">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Article Card 1 -->
+<div class="bg-white rounded-lg overflow-hidden border border-surface-variant group hover:border-primary transition-all duration-300">
+<div class="h-56 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern university library representing educational success." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2UAI3xNSWLfoneZFIpICh--X7Qkmii3u4S0PwFM_0vTkgHRMffASpn5BM3L6BSsaiQtWCPB0MmZ1SS10APErakEv69FKc9S_Zpc1ygZV_WkN8vjWP87751yPQn1ffOkWYyePhs31Qqpe51k95aW52A2NmNNtl3yiHlrB1uSUioWSSrFGT-9RPuWNaf-9Fc2BzfI2_fdc4CMf8WqjS-tpBQvPUmhgYXxcxuH__enC2P2ynsznmDiym_AsDLAoCQtMVpWtXf2kErlg">
+</div>
+<div class="p-md">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-primary-container text-on-primary px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Heritage</span>
+<span class="text-on-surface-variant text-[12px] font-medium">May 12, 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 group-hover:text-primary transition-colors">Our Roots: From Nalanda to Adelaide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                            Mapping the historical journey of Old Nalandians who settled in South Australia and established the foundation of our association.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-label-md" href="#">
+                            Read Article <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Article Card 2 -->
+<div class="bg-white rounded-lg overflow-hidden border border-surface-variant group hover:border-primary transition-all duration-300">
+<div class="h-56 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of hands joining together in unity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtJUIXz0sy-ast05uDCMVDCnSqvW9xX5e87Yhso300BKUsE6KnWYbagT_YmTjq8XU3rNw5uQ7p9QSrrolDuvH9SEbrLIjOUv1aZqDEYXsc02qlsPQOrIXQ8vMgkS2LSzsmjsEQR3MZReT8w4Gk6yKTxH8ee-m1jT8LiXrMVa_qvAy9QdMymykjbB6q_6zEqshqGmDjfna7Pn-J2P6cnHp4mGilNwnef5fNS-7mt7gRn2zV0LRvQYNY5jqg77fYO4x9CSzL4I7tnZY">
+</div>
+<div class="p-md">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-primary-container text-on-primary px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Community News</span>
+<span class="text-on-surface-variant text-[12px] font-medium">April 28, 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 group-hover:text-primary transition-colors">Annual Cricket Encounter Success</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                            A recap of our latest sports gathering that brought together three generations of alumni for a day of friendly competition and networking.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-label-md" href="#">
+                            Read Article <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Article Card 3 -->
+<div class="bg-white rounded-lg overflow-hidden border border-surface-variant group hover:border-primary transition-all duration-300">
+<div class="h-56 relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated executive office setup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0HYOgO0DEkLBnFaQTjgCRTIpvlMKbPjEfMGf2mjuXwZPBW80GDInjHxzkm8Insb104bpGdG7snNZejRoCE9kKWR4B2d_RvuKocJQO9-sjDkx38Hr9Y41cjki2VDpaPH_nLlVwJcJEJQG-P0pUbzlEI0cbtiH4FeWnARZC8fZmY67veMHzZBLLVePXYvELcwZ-U1mZPMHM-VNb4voQYPy8hIDIPqcRggbrWH-cEbaE5PS2puQlv1gJN8BifFPXDDdJ1Am3d5D8nZw">
+</div>
+<div class="p-md">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-primary-container text-on-primary px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Alumni Spotlight</span>
+<span class="text-on-surface-variant text-[12px] font-medium">April 15, 2024</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 group-hover:text-primary transition-colors">Dr. Senewiratne: A Lifetime of Service</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3 mb-6">
+                            An exclusive interview with one of our most distinguished medical alumni on balancing professional success with community giving.
+                        </p>
+<a class="inline-flex items-center gap-2 text-primary font-bold text-label-md" href="#">
+                            Read Article <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-xl flex justify-center">
+<button class="bg-white border-2 border-primary text-primary px-10 py-3 rounded-lg font-bold hover:bg-primary hover:text-on-primary transition-all">Load More Articles</button>
+</div>
+</div>
+</section>
+<!-- Newsletter Signup -->
+<section class="bg-surface-container py-xl px-md border-t border-surface-variant">
+<div class="max-w-[800px] mx-auto text-center">
+<div class="mb-8">
+<span class="material-symbols-outlined text-[48px] text-primary mb-4" data-icon="mail">mail</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Stay Connected</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Join our mailing list to receive the latest community news, event invitations, and alumni success stories directly in your inbox.
+                </p>
+</div>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-white border border-outline-variant rounded-lg px-6 py-4 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary text-label-md" placeholder="Your email address" type="email">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-lg font-bold whitespace-nowrap hover:bg-primary-container transition-all" type="submit">Subscribe Now</button>
+</form>
+<p class="mt-4 text-[12px] text-on-surface-variant opacity-70">
+                We respect your privacy. Unsubscribe at any time.
+            </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full py-xl px-md"><div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-sm font-bold text-secondary-container mb-6 block tracking-tight">ONASA</span>
+<p class="font-body-md text-body-md opacity-80 mb-6 leading-relaxed">
+                Connecting Old Nalandians across South Australia, fostering a spirit of brotherhood and communal excellence.
+            </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-lg border border-on-primary border-opacity-20 flex items-center justify-center hover:bg-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="public">public</span>
+</a>
+<a class="w-10 h-10 rounded-lg border border-on-primary border-opacity-20 flex items-center justify-center hover:bg-secondary-container hover:text-primary transition-all" href="#">
+<span class="material-symbols-outlined text-[20px]" data-icon="chat">chat</span>
+</a>
+</div>
+</div>
+<div class="md:pl-10">
+<h4 class="font-bold text-label-md mb-6 text-on-primary uppercase tracking-widest">Organization</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="about_us.html#history">History</a></li>
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="about_us.html#board">Board Members</a></li>
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="membership.html#faq">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-label-md mb-6 text-on-primary uppercase tracking-widest">Involvement</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="charity.html#volunteer">Volunteer</a></li>
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="membership.html">Membership Benefits</a></li>
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="charity.html">Donations</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-label-md mb-6 text-on-primary uppercase tracking-widest">Support</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="privacy_policy.html">Privacy Policy</a></li>
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="terms_conditions.html">Contact Us</a></li>
+<li class=""><a class="font-medium text-label-md opacity-80 hover:opacity-100 transition-opacity" href="#">Location</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-max-width mx-auto mt-xl pt-md border-t border-on-primary border-opacity-10 text-center">
+<p class="font-body-md text-body-md opacity-60">
+            © 2024 Old Nalandians Association of South Australia. One School, One Brotherhood, One Community.
+        </p>
+</div></footer>
+<script>
+    // Micro-interactions for category buttons
+    const categoryButtons = document.querySelectorAll('button.border-outline-variant');
+    const allStoriesBtn = document.querySelector('button.bg-primary');
+
+    categoryButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Reset "All Stories" button if it's the primary one
+            if (allStoriesBtn) {
+                allStoriesBtn.classList.remove('bg-primary', 'text-on-primary');
+                allStoriesBtn.classList.add('bg-white', 'text-on-surface-variant', 'border', 'border-outline-variant');
+            }
+            
+            // Reset others
+            categoryButtons.forEach(b => {
+                b.classList.remove('bg-primary', 'text-on-primary');
+                b.classList.add('bg-white', 'text-on-surface-variant');
+            });
+            
+            // Activate current
+            btn.classList.remove('bg-white', 'text-on-surface-variant');
+            btn.classList.add('bg-primary', 'text-on-primary');
+        });
+    });
+</script>
+
+
+<script>
+(function(){
+  var btn=document.getElementById("menuBtn");
+  var menu=document.getElementById("mobileMenu");
+  if(!btn||!menu){return;}
+  var icon=btn.querySelector(".material-symbols-outlined");
+  var desk=document.querySelector("header nav[class*='md:flex']");
+  function closeMenu(){ menu.classList.add("hidden"); if(icon){icon.textContent="menu";} }
+  if(desk){
+    menu.innerHTML=desk.innerHTML;
+    menu.querySelectorAll("a").forEach(function(a){
+      a.classList.add("block","py-2");
+      a.addEventListener("click",closeMenu);
+    });
+  }
+  var join=document.createElement("a");
+  join.href="membership.html";
+  join.textContent="Join Now";
+  join.className="block mt-2 bg-primary text-on-primary px-5 py-2 rounded-lg font-bold text-center no-underline";
+  join.addEventListener("click",closeMenu);
+  menu.appendChild(join);
+  btn.addEventListener("click",function(e){
+    e.preventDefault();
+    var open=menu.classList.toggle("hidden")===false;
+    if(icon){icon.textContent=open?"close":"menu";}
+  });
+})();
+</script>
+</body></html>
